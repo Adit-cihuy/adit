@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML CSS</title>
+    <style>
+        /* CSS */
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #f5deb3;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-class {
+            display: block;
+            margin: 0 auto 10px;
+            width: 50%;
+            max-width: 250px;
+            height: auto;
+        }
+
+        ul, ol {
+            margin: 20px 0;
+            padding-left: 40px;
+        }
+
+        ul {
+            list-style-type: square;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #0370ec;  
+            color: white;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <h1>Selamat Datang di Toko AditCell</h1>
+
+        <!-- Gambar -->
+        <img src="konteradit.jpeg" alt="konteradit" class="image-class">
+        <img src="cihuy.jpeg" alt="roblox" class="image-class">
+
+        
+
+        <!-- Daftar Berurut (Ordered List) -->
+        <h2>Daftar harga pulsa</h2>
+        <ol>
+            <li>Rp 10.000 , Rp 12.000</li>
+            <li>Rp 50.000 , Rp 55.000</li>
+            <li>Rp 100.000, Rp 106.000</li>
+        </ol>
+
+        <!-- Daftar Tidak Berurut (Unordered List) -->
+        <h2>Daftar aksessoris yang kami jual</h2>
+        <ul>
+            <li>Headset gaming Digidaw</li>
+            <li>Tripod kw super</li>
+            <li>PC Gaming RGB</li>
+            <li>Siomay Pak somad</li>
+        </ul>
+
+        <!-- Tabel -->
+        <h2>Tabel Harga Aksessoris</h2>
+        <table>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Harga</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Headset gaming Digidaw</td>
+                <td>Rp 325.000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Tripod kw super</td>
+                <td>Rp 50.000</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>PC Gaming RGB</td>
+                <td>Rp 10.128.000</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Siomay Pak somad</td>
+                <td>Rp 10.000</td>
+            </tr>
+        </table>
+
+        <!-- Formulir -->
+        <h2>Formulir Pemesanan</h2>
+        <h3>KAMI Melayani pengantaran Se-Indonesia</h3>
+        <form action="#">
+            <label for="nama">Nama:</label><br>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Masukkan email"><br><br>
+
+            <label for="Alamat_Pemesanan">Alamat Pemesanan:</label><br>
+            <input type="Alama_Pemesanan" id="Alamat_Pemesanan" name="Alamat_Pemesanan" placeholder="Masukkan Alamat Pemesanan"><br><br>
+
+            <input type="submit" value="Pesan">
+        </form>
+    </div>
+
+</body>
+</html>
